@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,3 +12,91 @@
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Tính Thời Gian Làm Việc</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <!-- Cherry Blossom Animation -->
+    <div class="cherry-blossoms">
+        <div class="cherry-blossom">🍊</div>
+        <div class="cherry-blossom">🌸</div>
+        <div class="cherry-blossom">❤️</div>
+        <div class="cherry-blossom">🍊</div>
+        <div class="cherry-blossom">🌸</div>
+        <div class="cherry-blossom">❤️</div>
+        <div class="cherry-blossom">🍊</div>
+        <div class="cherry-blossom">🌸</div>
+        <div class="cherry-blossom">❤️</div>
+        <div class="cherry-blossom">🍊</div>
+        <div class="cherry-blossom">🌸</div>
+        <div class="cherry-blossom">❤️</div>
+        <div class="cherry-blossom">🍊</div>
+        <div class="cherry-blossom">🌸</div>
+        <div class="cherry-blossom">❤️</div>
+        <div class="cherry-blossom">🍊</div>
+        <div class="cherry-blossom">🌸</div>
+        <div class="cherry-blossom">❤️</div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>⏰ Máy Tính Thời Gian Làm Việc cho công chúa</h1>
+            <p>Tính toán thời gian làm việc hàng ngày một cách chính xác nhó công chúa</p>
+        </div>
+
+        <form id="timeForm">
+            <div class="input-group">
+                <div class="input-row">
+                    <div class="input-field">
+                        <label for="startHour">Giờ bắt đầu</label>
+                        <input type="number" id="startHour" min="0" max="23" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="startMinute">Phút bắt đầu</label>
+                        <input type="number" id="startMinute" min="0" max="59" required>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-field">
+                        <label for="endHour">Giờ kết thúc</label>
+                        <input type="number" id="endHour" min="0" max="23" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="endMinute">Phút kết thúc</label>
+                        <input type="number" id="endMinute" min="0" max="59" required>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">📊 Tính Thời Gian</button>
+            <button type="button" class="btn clear" onclick="clearAll()">🗑️ Xóa Tất Cả</button>
+        </form>
+
+        <div id="result" class="result" style="display: none;">
+            <h3>📋 Kết Quả</h3>
+            <div id="dailyTime" class="time-display"></div>
+            <div class="total-display">
+                <strong>Tổng thời gian công chúa làm việc:</strong>
+                <div id="totalTime" class="time-display"></div>
+            </div>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="sessionList" class="session-list" style="display: none;">
+            <h3 style="margin-bottom: 15px; color: #4a5568;">📝 Lịch Sử Làm Việc</h3>
+            <div id="sessions"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 5ce33a3a46c8c545c5237f01cfc32ab97ed7a244
